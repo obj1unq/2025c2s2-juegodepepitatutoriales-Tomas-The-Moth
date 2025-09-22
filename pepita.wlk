@@ -1,19 +1,18 @@
 
 object pepita {
-	var energia = 100
+	var property energia = 100
     var property position = game.origin()
+	var property image = "pepita.png"
 	method comer(comida) {
 		energia = energia + comida.energiaQueOtorga()
 	}
 
 	method volar(kms) {
-		energia = energia - 10 - kms 
+		energia = energia - kms 
 	}
 	
-	method energia() {
-		return energia
-	}
-   method image(imagen) = imagen
+	
+
 }
 
 
@@ -32,7 +31,7 @@ object silvestre {
 }
 
 object nido {
-	var property position = game.at(9,9)
+	var property position = game.at(8,8)
 
 	method image() = "nido.png"
 
